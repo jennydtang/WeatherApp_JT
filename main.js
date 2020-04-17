@@ -2,7 +2,9 @@
 const clock = document.getElementById('clock'); //display clock
     function updateTime(){
         const now = moment();
-        const humanReadable = now.format("MMMM Do YYYY, h:mm:ss a");
+        //utcOffset updates the timezone, but the momentjs doc appears to use numbers to update the zone; ie denver: -6.00, charlotte: -4.00, 
+        //site to find utc: https://24timezones.com/Los-Angeles/time
+        const humanReadable = now.utcOffset(-4.00).format("MMMM Do YYYY, h:mm:ss");
 
         clock.textContent=humanReadable;
     }
@@ -15,7 +17,7 @@ var inputValue = document.querySelector('.inputValue');
 var temp = document.querySelector('.temp');
 var city = document.querySelector('.city');
 var desc = document.querySelector('.desc');
-
+var icon = document.querySelector('.icon')
 
 //fetch data with button click
 button.addEventListener('click', function(){
@@ -26,12 +28,14 @@ button.addEventListener('click', function(){
 {
     //define each value as related to object
     var cityValue = data['name'];
-    var tempValue = data['main']['temp'];
+    var tempValue = (data['main']['temp'])=(Math.floor(data['main']['temp'])-273) + " ° Celsius" //convert temp from kelvin to farenheit
     var descValue =data['weather'][0]['description'];
+
     //print values to HTML
     city.innerHTML=cityValue;
     temp.innerHTML=tempValue;
     desc.innerHTML=descValue;
+    console.log(data);
 })
 
 
