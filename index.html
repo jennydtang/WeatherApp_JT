@@ -16,30 +16,21 @@
         <div id="clock"></div>
     <!-- Weather-->
         <div class="container2">
-            <div class ="weather">Actual Weather Update</div>
+            <p class ="temp">Actual Weather Update</p>
+            <p class ="city">name</p>
             <div class="weatherImg">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjDN67OT3n5mFn_wW26orLzwTY6hRqRdKxaxh-AUWNmtu_zxgv&usqp=CAU">
             </div>
-            <div class="temperatureDescription">Temperature Description</div>
-            <p>
-                Zipcode: <input id="zipcode" placeholder="Zipcode"></input>
-                <button id = "submit">Submit</button>
-            </p>
+            <p class="desc">Temperature Description</p>
+            <!-- Zipcode Input -->
+                <p>
+                    Zipcode: <input class="inputValue" placeholder="Zipcode"></input>
+                    <button class = "button">Submit</button>
+                </p>
         </div>
     </div>
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> 
 <script src="main.js"></script>
-<!-- <script>
-    // const clock = document.getElementById('clock');
-    // function updateTime(){
-    //     const now = moment();
-    //     const humanReadable = now.format("hh:mm:ssA");
-
-    //     clock.textContent=humanReadable;
-    // }
-    // setInterval(updateTime, 1000);
-    // updateTime();
-</script> -->
 </body>
 </html>
