@@ -28,7 +28,7 @@ button.addEventListener('click', function(){
 {
     //define each value as related to object
     var cityValue = data['name'];
-    var tempValue = (data['main']['temp'])=(Math.floor(data['main']['temp'])-273) + " ° Celsius" //convert temp from kelvin to farenheit
+    var tempValue = (data['main']['temp'])=(Math.floor((data['main']['temp'])-273.15) * 9/5 + 32) + " °F" //convert temp from kelvin to farenheit
     var descValue =data['weather'][0]['description'];
 
     //print values to HTML

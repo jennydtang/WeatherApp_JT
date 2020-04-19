@@ -1,7 +1,62 @@
 .container{
-    border: solid black;
-    width: 500px;
+    width: 800px;
     height: 500px;
     text-align: center;
     margin: 0 auto;
+    padding: 15%;
+}
+
+body {
+    font-family:'montserrat', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1568526381923-caf3fd520382?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
+    background-size: cover; 
+    min-height: 100vh;
+    color:rgba(250, 250, 250, 0.94);
+}
+
+.inputValue {
+    background-color: rgba(211, 204, 204, 0.741);
+    border: none;
+    padding: 5px 7px;
+    border-radius: 7px 7px 7px 7px;
+}
+.apptitle{
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.6);
+}
+
+.temp{
+    font-size: 70px;
+    font-weight: 500;
+    text-shadow: 4px 6px rgba(0, 0, 0, 0.6);
+    background-color: rgba(218, 214, 214, 0.488);
+    width: 250px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px;
+
+}
+.city{
+    font-size: 32px;
+    font-weight: 500;
+    text-shadow: 3px 4px rgba(124, 121, 121, 0.536);
+}
+
+.desc{
+    font-size: 22px;
+    font-style: italic;
+    text-shadow: 2px 3px rgba(124, 121, 121, 0.536);
+
+}
+
+#clock{
+    font-size: 23px;
+    font-weight: 549;
+    margin-bottom: 15px;
+}
+
+footer{
+    text-align: center;
 }
