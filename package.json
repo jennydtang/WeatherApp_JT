@@ -9,7 +9,7 @@
   },
   "author": "Jenny",
   "license": "ISC",
-  "dependencies": {
+  "depnpmendencies": {
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.28"
   }
